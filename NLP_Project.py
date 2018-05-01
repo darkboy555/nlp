@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pandas as pd
 import time
 train=pd.read_csv('new_train.csv',encoding='latin-1')
@@ -40,7 +39,7 @@ print('time taken'+ str(total_time))
 
 def predictSentence(sentence):
     pred=model.predict(vec.transform([sentence]))
-=======
+
 import pandas as pd
 import time
 train=pd.read_csv('new_train.csv',encoding='latin-1')
@@ -81,6 +80,7 @@ print('time taken'+ str(total_time))
 
 
 def predictSentence(sentence):
+    
     pred=model.predict(vec.transform([sentence]))
->>>>>>> d157d7d50ddfd7c9486c175d3050f9580a085adb
+    
     return le.classes_[pred]
