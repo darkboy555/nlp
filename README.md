@@ -1,1 +1,1 @@
-# nlp
+Project language classification using logistic regression
